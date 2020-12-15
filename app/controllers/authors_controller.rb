@@ -15,7 +15,6 @@ class AuthorsController < ApplicationController
 
        redirect_to author_path(@author)
      else
-       binding.pry
        render :new
     end
   end
@@ -29,3 +28,4 @@ class AuthorsController < ApplicationController
     params.permit(:name, :email, :phone_number)
   end
 end
+ 
