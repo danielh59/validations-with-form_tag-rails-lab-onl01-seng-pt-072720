@@ -1,6 +1,8 @@
 <h2>Create an Author</h2>
 <%= form_tag(@author) do %>
 <% if @author.errors.any? %>
+<% binding.pry %>
+
     <div id="error_explanation ">
       <h2>There were some errors:</h2>
       <ul>
